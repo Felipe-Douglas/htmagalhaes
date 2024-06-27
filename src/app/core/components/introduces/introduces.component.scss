@@ -1,0 +1,29 @@
+@import "./../../../../variables";
+
+.introduces-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 12rem;
+    background: rgba($color: $creme, $alpha: 0.5);
+
+
+    .founder-image {
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        text-align: justify;
+        font-weight: 300;
+        max-width: 80%;
+        width: 60%;
+    }
+}

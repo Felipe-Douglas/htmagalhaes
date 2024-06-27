@@ -1,0 +1,22 @@
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, auto);
+    column-gap: 4rem;
+    row-gap: 4rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery-section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}

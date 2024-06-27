@@ -1,0 +1,21 @@
+<section class="newsletter-section pad-12">
+    <div class="text">
+        <h4>HTMagalhares Accessories</h4>
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit molestias qui fugiat id explicabo fugit minima
+            voluptates, nobis facilis debitis architecto quo repellat repellendus odio cupiditate unde officiis
+            perspiciatis laborum nostrum molestiae velit odit veniam quae. Maiores dolores iusto perspiciatis facere!
+            
+        </p>
+    </div>
+    <form action="" [formGroup]="newsletter">
+        <label for="name">Nome</label>
+        <input type="text" id="name" formControlName="name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" formControlName="email">
+
+        <app-button btn-text="Se inscreva" (submit)="onSubmit()" [disabled]="!newsletter.valid" [loading]="loading()"></app-button>
+    </form>
+</section>

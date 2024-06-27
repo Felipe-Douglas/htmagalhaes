@@ -1,0 +1,18 @@
+.btn {
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+
+    padding: 1rem 2rem;
+
+    background: #FABFA1;
+    color: #000;
+
+    font-size: 16px;
+    font-weight: 700;
+
+
+    &:hover {
+        background: rgba($color: #FABFA1, $alpha: .7);
+    }
+}

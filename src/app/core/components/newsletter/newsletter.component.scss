@@ -1,0 +1,47 @@
+
+.newsletter-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 6rem;
+
+    .text {
+        flex: 1;
+
+        text-align: justify;
+
+        h4 {
+            font-size: 6rem;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 2rem;
+        }
+    }
+
+    form {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: 600;
+        }
+
+        input {
+            height: 6rem;
+            margin-bottom: 2rem;
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 2px solid #000;
+            font-weight: 300;
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .newsletter-section {
+        flex-direction: row;
+    }
+}

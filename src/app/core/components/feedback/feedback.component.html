@@ -1,0 +1,16 @@
+<section class="wrapper-feedback pad-12">
+    <div class="carousel-container">
+        <div class="carousel-slide" *ngFor="let feedback of feedbacks; let i = index"
+            [ngClass]="{'active': i === currentSlide}">
+            <div class="feedback-title">{{ feedback.title }}</div>
+            <div class="feedback-content">{{ feedback.content }}</div>
+            <fa-icon *ngFor="let star of [1, 2, 3, 4, 5]" [icon]="star <= feedback.rating ? 'star' : ['fas', 'star']" [style.color]="star <= feedback.rating ? '#FABFA1' : '#ddd'"></fa-icon>
+        </div>
+        <div class="carousel-control">
+            <div *ngFor="let feedback of feedbacks; let i = index">
+                <input type="radio" name="carousel" [id]="'carousel-' + i" [checked]="i === currentSlide" (change)="goToSlide(i)">
+                <label [for]="'carousel-' + i"></label>
+            </div>
+        </div>
+    </div>
+</section>
